@@ -44,8 +44,6 @@ val liveData: LiveData<T> = liveDataOf()
 val mutableLiveData: MutableLiveData<T> = mutableLiveDataOf()
 
 // You can create live data with default value
-class MyClass
-
-val myLiveData = liveDataOf(MyClass())
-val myMutableLiveData = mutableLiveDataOf(MyClass())
+val booleanLiveData = liveDataOf(true)
+val booleanMutableLiveData = mutableLiveDataOf(false)
 ```
