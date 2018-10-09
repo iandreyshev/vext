@@ -24,7 +24,7 @@ dependencies {
 
 ## Code examples
 
-### 1. Update single view visibility
+### Update single view visibility
 ```kotlin
 textView.gone()
 textView.visible()
@@ -33,17 +33,19 @@ textView.invisible()
 textView.goneIf(true)
 textView.goneIfOrVisible(true)
 ```
-### 2. Update collections of view
+### Update collections of view
 ```kotlin
 visibleAll(textView, buttonView)
 listOf(textView, buttonView).visibleAll()
 ```
-### 3. Create LiveData objects
+### Create LiveData objects
 ```kotlin
-val myLiveData: LiveData<MyClass> = liveDataOf()
-val myMutableLiveData: MutableLiveData<MyClass> = mutableLiveDataOf()
+val liveData: LiveData<T> = liveDataOf()
+val mutableLiveData: MutableLiveData<T> = mutableLiveDataOf()
 
 // You can create live data with default value
+class MyClass
+
 val myLiveData = liveDataOf(MyClass())
 val myMutableLiveData = mutableLiveDataOf(MyClass())
 ```
