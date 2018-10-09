@@ -1,5 +1,6 @@
 # View extensions
 [![](https://jitpack.io/v/iandreyshev/Vext.svg)](https://jitpack.io/#iandreyshev/Vext) [![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+
 Library with helper functions for UI layer in Android applications.
 Full *Kotlin* support (library based on extension functions)
 
