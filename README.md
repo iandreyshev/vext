@@ -39,8 +39,8 @@ listOf(textView, buttonView).visibleAll()
 ```
 ### Create LiveData objects
 ```kotlin
-val liveData: LiveData<T> = liveDataOf()
-val mutableLiveData: MutableLiveData<T> = mutableLiveDataOf()
+val liveData = liveDataOf<T>()
+val mutableLiveData = mutableLiveDataOf<T>()
 
 // You can create live data with default value
 val booleanLiveData = liveDataOf(true)
