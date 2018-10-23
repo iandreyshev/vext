@@ -40,10 +40,16 @@ fun View.visibleIfOrGone(isVisible: Boolean) {
     }
 }
 
-fun View.goneIfOrVisible(isGone: Boolean) {
-    if (isGone) {
-        gone()
-    } else {
+fun View.goneIfOrVisible(isGone: Boolean) =
+        visibleIfOrGone(!isGone)
+
+fun View.visibleIfOrInvisible(isVisible: Boolean) {
+    if (isVisible) {
         visible()
+    } else {
+        invisible()
     }
 }
+
+fun View.invisibleIfOrVisible(isInvisible: Boolean) =
+        visibleIfOrInvisible(!isInvisible)
